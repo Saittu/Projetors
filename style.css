@@ -7,17 +7,21 @@
 
 :root{
     --text-color: white;
-    --bg-url: url(../image/Background\ black.png);
+    --bg-url: url("./image/Backgroundblack.png");
     --stroke-color: rgba(255, 255, 255, 0.5);
-    --interface-color:  rgba(255, 255, 255, 0.1);
-    --switch-bg-url: url(../image/MoonStars.svg);
+    --interface-color:  rgba(255, 255, 255, 0.5);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url("./image/MoonStars.svg");
 }
 
 .light{
     --text-color: black;
-    --bg-url: url(../image/backround\ white.png);
+    --bg-url: url("./image/backroundwhite.png");
     --stroke-color: rgba(0,0,0,0.5);
     --interface-color: rgba(0, 0, 0, 0.05);
+    --highlight-color: rgba(0, 0, 0, 0.2);
+    --switch-bg-url: url("./image/Switch.svg");
+
 }
 
 
@@ -77,7 +81,7 @@ body *{
     animation: slide-back .2s;
 }
 
-.light #swhitch button p{
+.light #swhitch button{
     animation: slide-in 0.4s forwards;
 }
 
@@ -114,17 +118,17 @@ ul li a{
     align-items: center;
     justify-content: center;
 
-padding: 16px 24px;
+    padding: 16px 24px;
 
-background: var(--interface-color);
-border: 1px solid var(--stroke-color);
-backdrop-filter: blur(4px);
--webkit-backdrop-filter: blur(4px);
+    background: var(--interface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 
-text-decoration: none;
-font-weight: 500;
+    text-decoration: none;
+    font-weight: 500;
 
-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 /* pseudo selector */
@@ -168,12 +172,12 @@ footer{
 
 @media (min-width: 700px) {
     :root {
-        --bg-url: url(../image/Background\ black.png);
+        --bg-url: url(../image/Backgroundblackpc.png);
         height: 100vh;
     }
 
     .light {
-        --bg-url: url(../image/backround\ white.png);
+        --bg-url: url(../image/background.png);
     }
 }
 
